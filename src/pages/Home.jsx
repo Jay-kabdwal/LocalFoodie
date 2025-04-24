@@ -144,7 +144,8 @@ const Home = () => {
                     {filteredRestaurants.map((restaurant) => (
                         <div
                             key={restaurant.id}
-                            className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-105"
+                            onClick={() => navigate(`/restaurant/${restaurant.id}`)}
+                            className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
                         >
                             <div className="relative">
                                 <img
